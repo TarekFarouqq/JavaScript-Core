@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="functions.js"></script>
+    <script defer src="script.js" ></script>
+</head>
+<body>
+
+    
+    <form action="#" method="POST">
+        <div> 
+            <label >DEPT : </label>
+            <label><input type="radio" name="choice" value="IT"  checked>IT</label>
+            <label><input type="radio" name="choice" value="CS">CS</label>
+            <label><input type="radio" name="choice" value="SW">SW</label>
+        </div>
+        <br><br>
+
+        
+        <div>
+            <label for="textbox1">Name </label>
+            <input type="text" id="name" name="Name">
+        </div>
+        <br>
+        <div>
+            <label for="textbox2">Grade </label>
+            <input type="number" id="grade" name="textbox2">
+        </div>
+        <br>
+        <br>
+
+        <label > Filter :</label>
+        <select id="filter">
+            
+            <option value="all">All Students</option>
+            <option value="failed">Failed</option>
+            <option value="successful">Successful</option>
+         </select>
+        <br>
+        <br>
+
+        <label >Sort :</label>
+        <select id="sort">
+            <option value="none">None</option>
+            <option value="name">by Name</option>
+            <option value="grade">by Grade</option>
+         </select>
+        <p class="error"></p>
+        
+        <div>
+            <button class="addButton" type="submit">ADD</button>
+        </div>
+        <br>
+        <div id="student_table">
+            <table>
+
+            </table>
+        </div>
+    </form>
+
+    
+</body>
+</html>

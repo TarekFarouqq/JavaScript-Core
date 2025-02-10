@@ -1,0 +1,6 @@
+.flip-horizontal{
+    transform: scaleX(-1);
+}
+.changeStyle{
+    border: 5px solid black;
+}
